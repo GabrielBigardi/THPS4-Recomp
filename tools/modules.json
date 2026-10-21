@@ -1,0 +1,30 @@
+{
+  "main": {
+    "file": "SLUS_014.85",
+    "code_hi": "800B3C20",
+    "flat": [
+      [
+        "80084EE0",
+        "800853E8"
+      ]
+    ]
+  },
+  "relocatable": [
+    "credits",
+    "mainmenu",
+    "cresave",
+    "cresel",
+    "Handicap",
+    "levelsel",
+    "multisel",
+    "OPTIONS",
+    "EquipSel",
+    "EdMod",
+    "carsel",
+    "statedit",
+    "tricksel",
+    "playsel",
+    "creedit"
+  ],
+  "comment_flat": "flat: hand-written assembly that jumps into its own subroutines and keeps state in ra (libpress DecDCTvlc). Each range becomes one C function: internal jal = goto, jr ra = switch over the internal return points (otherwise a real return)."
+}
